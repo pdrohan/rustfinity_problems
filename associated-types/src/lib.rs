@@ -5,7 +5,6 @@ use std::collections::HashMap;
 pub trait KeyValueStore {
     type Key;
     type Value;
-
     fn set(&mut self, key: Self::Key, value: Self::Value);
 
     // get returns the value if it exists
